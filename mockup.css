@@ -1,0 +1,98 @@
+:root {
+  --color-primario: #2c3e50;
+  --color-secundario: #ecf0f1;
+  --color-acento: #3498db;
+  --color-fondo: #f4f4f4;
+  --color-texto: #2c3e50;
+  --color-boton-hover: #1a242f;
+  --color-borde: #bdc3c7;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-fondo);
+  background-image: url('img2.png');
+  color: var(--color-texto);
+  padding: 2rem;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header i {
+  font-size: 3rem;
+  color: var(--color-acento);
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  margin-top: 0.5rem;
+  color: var(--color-primario);
+}
+
+.form-section label {
+  display: block;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-section select,
+.form-section input,
+.form-section textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--color-borde);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  transition: border-color 0.3s;
+}
+
+.form-section select:focus,
+.form-section input:focus,
+.form-section textarea:focus {
+  outline: none;
+  border-color: var(--color-acento);
+}
+
+.form-section textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  background-color: var(--color-acento);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+button:hover {
+  background-color: var(--color-boton-hover);
+}

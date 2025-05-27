@@ -1,0 +1,51 @@
+/* Reset y estructura base */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fondo con imagen de pantalla completa */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('img2.png'); /* Asegúrate de que esta imagen esté subida */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+/* Contenedor sin fondo blanco */
+.container {
+  /* No tiene fondo ni caja blanca */
+}
+
+/* Estilos del título */
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Botón */
+a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+a:hover {
+  background-color: #2980b9;
+}
